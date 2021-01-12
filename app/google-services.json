@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "285478162769",
+    "project_id": "track-your-dairy",
+    "storage_bucket": "track-your-dairy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285478162769:android:a0cf72827dfe5c30ce0370",
+        "android_client_info": {
+          "package_name": "com.example.trackyourdairy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285478162769-07k3csnvqs89ehqk1qq1eaqh1bn52nmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6nfCeXLhdmUdKzvgEBYUxNwtKBdRtuKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285478162769-07k3csnvqs89ehqk1qq1eaqh1bn52nmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

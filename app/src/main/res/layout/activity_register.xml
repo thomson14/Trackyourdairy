@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a new account"
+            android:textSize="30sp"
+            android:textStyle="italic"/>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_person_black_24dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Username"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_email_black_24dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Email"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_number"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_phone_iphone_black_24dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mobile no"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_wc_black_24dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Gender"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_person_black_24dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:hint="Password"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/btn_register"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/registerProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
