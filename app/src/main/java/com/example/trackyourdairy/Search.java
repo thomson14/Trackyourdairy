@@ -62,8 +62,8 @@ public class Search extends AppCompatActivity {
         btFind = findViewById(R.id.bt_find);
         supportMapFragment =    (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.google_map);
 
-        final String[] placeTypeList = {"atm","bank","Hospital","movie_theater","restaurant"};
-        String[] placeNameList = {"ATM","Bank","Hospital","Movie Theater","Restaurant"};
+        final String[] placeTypeList = {"milk_dairy","atm","bank","Hospital","movie_theater","restaurant"};
+        String[] placeNameList = {"Milk Dairy","ATM","Bank","Hospital","Movie Theater","Restaurant"};
 
         spType.setAdapter(new ArrayAdapter<>(Search.this,android.R.layout.simple_spinner_dropdown_item,placeNameList));
 
@@ -81,9 +81,9 @@ public class Search extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Log.d("button_find","btn find"+btFind);
+                Log.d("button_find",":"+btFind);
                 int i= spType.getSelectedItemPosition();
-                Log.d("sptype","sptype"+placeTypeList[i]);
+                Log.d("sptype",":"+placeTypeList[i]);
 
                 String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json" +
                         "?location=" + currentLat + "," + currentLong +
@@ -92,8 +92,6 @@ public class Search extends AppCompatActivity {
                         "&sensor=true" +
                         "&key=" + getResources().getString(R.string.google_map_key);
                 Log.d("URL","::"+url);
-
-
                 new PlaceTask().execute(url);
             }
         });

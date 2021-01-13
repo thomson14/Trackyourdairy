@@ -14,23 +14,22 @@
       },
       "oauth_client": [
         {
-          "client_id": "285478162769-07k3csnvqs89ehqk1qq1eaqh1bn52nmr.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "285478162769-lb5bkdas345oj0qgogn608vn3sk689at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trackyourdairy",
+            "certificate_hash": "8734698de494f7710d3a155ae0dabfa4e097d9c1"
+          }
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB6nfCeXLhdmUdKzvgEBYUxNwtKBdRtuKA"
+          "current_key": "AIzaSyAaAhX4iX_rtDmzSVV2N54g9YymLlYCx7M"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "285478162769-07k3csnvqs89ehqk1qq1eaqh1bn52nmr.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

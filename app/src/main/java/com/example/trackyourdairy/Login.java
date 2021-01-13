@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -35,9 +36,11 @@ public class Login extends AppCompatActivity {
 
         btn_loginL = (Button) findViewById(R.id.btn_loginL);
         auth = FirebaseAuth.getInstance();
+        Log.d("btn_Login", "L:"+btn_loginL);
         btn_loginL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("btn_Login", "L:"+btn_loginL);
                 loginProgress.setVisibility(View.VISIBLE);
                 String txt_email = emailL.getEditText().getText().toString();
                 String txt_password = passwordL.getEditText().getText().toString();
